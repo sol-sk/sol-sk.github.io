@@ -117,9 +117,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 17pt;
-		font-weight: 300;
+		font-family: "Futura Renner", Futura, sans-serif;
+		font-size: 16pt;
+		font-weight: 250;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
 	}
@@ -160,11 +160,11 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #64ae7d !important;
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #30b549 !important;
 		}
 
 	strong, b {
