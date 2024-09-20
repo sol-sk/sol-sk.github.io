@@ -165,7 +165,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #64ae7d !important;
+			color: #30b549 !important;
 		}
 
 		a:active {
@@ -3005,7 +3005,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #031915;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3268,7 +3268,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #060023;
+				color: #ffd52c7d;
 			}
 
 			#header.alt.style3 .logo strong {
@@ -3494,13 +3494,13 @@ input, select, textarea {
 			#banner.major.alt {
 				opacity: 0.75;
 			}
-
+/*CHANGE*/
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #30b549;
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #fff39b;
 		}
 
 		#banner.style3:after {
