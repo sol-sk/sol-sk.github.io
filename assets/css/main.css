@@ -2079,26 +2079,7 @@ input, select, textarea {
 		color: rgba(244, 244, 255, 0.2) !important;
 		opacity: 1.0;
 	}
-
-/* Box */
-
-	.box {
-		border: solid 1px rgba(212, 212, 255, 0.1);
-		margin-bottom: 2em;
-		padding: 1.5em;
-	}
-
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
-			margin-bottom: 0;
-		}
-
-		.box.alt {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-		}
+/* Box former location in file: if it breaks, put it back here */ 
 
 /* Icon */
 
@@ -2716,6 +2697,133 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
+/* Box */
+
+.box {
+	border: solid 1px rgba(212, 212, 255, 0.1);
+	margin-bottom: 2em;
+	padding: 1.5em;
+}
+
+	.box > :last-child,
+	.box > :last-child > :last-child,
+	.box > :last-child > :last-child > :last-child {
+		margin-bottom: 0;
+	}
+
+	.box.alt {
+		border: 0;
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.box.alt2 {
+		border: 0;
+		border-radius: 0;
+		padding: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		cursor: default;
+	}
+
+	
+/*  */
+	.box.alt2 .container {
+		position: relative;
+		display: inline-block; /* Align the images side by side */
+	}
+
+	/* Images should take full width of container */
+	.box.alt2 .container img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.box.alt2 span h4 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%); /* Center horizontally and vertically */
+			z-index: 10;  /* Ensure it appears on top of the image */
+			text-align: center;
+		font-size: 1.1em;
+		color: #ffffff;
+		visibility: hidden; /* Set it to hidden initially */
+			
+	}
+	
+	.box.alt2 .container:hover h4 {
+		visibility: visible; /* Make it visible when hovering over the parent */
+		opacity: 1;
+		color: #ffffff;
+	}
+
+/* fuck you chatgpt for fixing my shit */
+
+	.box.alt2 .container:hover img{
+		border: 0;
+		border-radius: 0;
+		padding: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		cursor: default;
+		color: inherit !important;
+		opacity: 0.4;
+	}
+
+	.box.alt2 span:before {
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		z-index: 2;
+	}
+
+	.box.alt2 span.is-transitioning {
+		-moz-transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+		-moz-filter: blur(0.5em);
+		-webkit-filter: blur(0.5em);
+		-ms-filter: blur(0.5em);
+		filter: blur(0.5em);
+		opacity: 0;
+	}
+	 /* doesnt work */
+
+/*
+	.box.alt2 span:hover:after {
+		background-color: rgba(36, 41, 67, 0.25);
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+		opacity: 0.5;
+	}
+
+	.box.alt2 span:hover:before {
+	opacity: 0;
+	}
+
+		p:hover .box.alt2{
+		display:block;
+	}
+*/
+
+
+
 /* Tiles */
 
 	.tiles {
@@ -2786,6 +2894,7 @@ input, select, textarea {
 				width: 100%;
 				z-index: 4;
 			}
+/* Sets the before and after hover appearance, and color of tiles */
 
 			.tiles article:before {
 				-moz-transition: opacity 0.5s ease;
